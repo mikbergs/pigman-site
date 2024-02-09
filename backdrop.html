@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="icon" href="pigman-logo.png">
+		<title>Pigman</title> 
+	</head>
+	<body>
+		<div class="start-page">
+			<div class="svg-container">
+			<img src = "pigman_backdrop.svg" alt="Pigman" class="rotate"/>
+        </div>
+	</body>
+</html>
+  
+  <script>
+    const circle = document.getElementById('circle');
+    let isColor1 = true;
+  
+    setInterval(() => {
+      if (isColor1) {
+        circle.classList.remove('color1');
+        circle.classList.add('color2');
+      } else {
+        circle.classList.remove('color2');
+        circle.classList.add('color1');
+      }
+      isColor1 = !isColor1;
+    }, 1000); // Toggle colors every second
+  </script>
+  
+  <style>
+    .color1 {
+      fill: red;
+    }
+    .color2 {
+      fill: blue;
+    }
+  </style>
+  
