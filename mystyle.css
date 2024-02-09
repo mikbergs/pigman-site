@@ -19,11 +19,11 @@ h1 {
 img {
 	height: auto;
     max-width: 100vmin;
-	max-height:97vmin;    
+	max-height:97vmin;
 	display: block;
 	margin: auto;
 	overflow-y: hidden; 
-	overflow-x: hidden; 	    
+	overflow-x: hidden;
     }
 .rotate {
 	animation: rotation 33s infinite linear;
